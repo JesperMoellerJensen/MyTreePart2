@@ -1,0 +1,14 @@
+﻿@using System.Reflection
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model MyTreePart2.Models.Account.User
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Account";
+}
+
+
+<div class="form-group">
+    <label>Firstname: @Model.FirstName</label> <br />
+    <label>Lastname: @Model.LastName</label> <br />
+    <label>Email: @Model.Email</label> <br />
+</div>
